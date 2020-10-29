@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 50%;
+    margin: 2rem auto;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr;
+    /*background-color: #eee;*/
+    padding: 0.7rem;
+}
+
+input, button {
+    width: 98%;
+    padding: 0.6rem 0.4rem;
+    margin: 0.4rem;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.success {
+    background-color: rgb(54, 80, 231);
+    color: rgb(255, 255, 255);
+}
+
+.delete {
+    background-color: rgb(231, 54, 54);
+    color: rgb(255, 255, 255);
+}
+
+
+table {
+    background-color: #eee;
+    margin-top: .9rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 5px 25px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 22pt;
+    margin: 20px;
+    font-family: system-ui;
+}
+h5 {
+    text-align: center;
+    color: #fff;
+    font-size: 10pt;
+    margin: 10px;
+    font-family: system-ui;
+}
+a {
+    text-decoration: none;
+    color: #ddd;
+}
+i {
+    color: green;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: fit-content;
+        background-color: tomato;
+    }
+    #contexts {
+        background-color: chocolate;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    table {
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: darkslategray;
+    color: #fff;
+    font-weight: 600;
+    font-family: system-ui;
+    font-size: 10pt;
+    border-color: black;
+    }
+}
